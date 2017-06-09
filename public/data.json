@@ -1,0 +1,13 @@
+{
+		"personalInfo" : {
+			"image" : "abc",
+			"name" : "name"
+		},
+		"courses" : [
+			
+		"abc", "def"
+		],
+		"notifications" : [
+			"rrr", "jjj"
+		]
+	}
