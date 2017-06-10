@@ -13,17 +13,22 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="App">
-      <Userinfo/>
-        {JSON.stringify(this.props)}       
+      <Userinfo
+        personalInfo = {this.props.personalInfo}
+      />
+        {this.props.loader && console.log('show loading') &&
+          <p>Loading</p>
+        }       
       </div>
     );
   }
 }
 
 const mapStateToProps = state => {
-  const {personalInfo, courses, notifications} = state;
+  const {personalInfo, courses, notifications, loader} = state;
 
   return {
     personalInfo,
